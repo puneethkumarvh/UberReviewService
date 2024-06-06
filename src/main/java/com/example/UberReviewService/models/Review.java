@@ -12,16 +12,16 @@ public class Review {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
 
-    Long id;
+    private Long id;
     @Column(nullable = false)
     String Content;
-    Double Rating;
+    private Double Rating;
     @Column(nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     @CreatedDate
-    Date createdAt;
+    private Date createdAt;
     @Column(nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     @LastModifiedDate
-    Date updatedAt;
+    private Date updatedAt;
 }
